@@ -7,7 +7,7 @@ var app = express();
 app.get('/', function (req, res) {
   var start = new Date();
   call().then(function(resp){
-    console.log('Request took:', new Date() - start, 'ms');
+    console.log('Request to stg2 stock API through GraphQL took:', new Date() - start, 'ms');
     res.send(resp);
 
 
